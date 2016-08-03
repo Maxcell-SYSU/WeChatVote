@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>微信投票结果</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <script type="text/javascript" src="/assets/js/jquery.js"></script>
+        <script type="text/javascript" src="/assets/js/refresh.js"></script>
+        <style>
+            body {
+                background: rgb(37,21,2);
+                width: 1024px;}
+            .id {
+                color: #D7B13B;
+            }
+            #content {
+                margin-top: 120px;
+            }
+            #topbar {
+                width: 1024px;
+                height: 600px;
+                background-image: url(/assets/img/decorate.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                z-index: 0;
+            }
+            #bottombar {
+                width: 100%;
+                height: 100%;
+                background-image: url(/assets/img/background.png);
+                background-repeat: repeat;
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+            }
+            #Maxcell {
+                width: 1024px;
+                height: 100px;
+                margin-top: 720px;
+                position: absolute;
+                background-image: url(/assets/img/bottombar.png);
+                background-repeat: no-repeat;
+                z-index: -2;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topbar"></div>
+        <div id="content"></div>
+        <div id="bottombar"><div id="Maxcell"></div></div>
+    </body>
+</html>
